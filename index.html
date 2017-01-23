@@ -26,12 +26,16 @@
    <body>
       <!-- menu -->
       <nav class="navbar navbar-fixed-top" id="menu-background">
-         <div class="navbar-header">
+         <div class="navbar-header hidden-sm hidden-xs">
             <img src="img/logo.png" class="navbar-brand" href="#" id="logo">
             <a class="social" href="https://www.youtube.com/channel/UCUBXuk32QZ0rw20DBHvbu9Q"><span class="hb hb-xs"><i class="fa fa-youtube"></i></span></a>
             <a class="social" href="https://www.facebook.com/recandplay2014"><span class="hb hb-xs"><i class="fa fa-facebook"></i></span></a>
          </div>
          <div class="container">
+          <button class="navbar-toggle" data-toggle = "collapse" data-target=".btns">
+              ☰
+          </button>
+           <div class="collapse navbar-collapse btns">
             <ul class="nav navbar-nav navbar-right">
                <li><a class="aktivni" href="#" id="But0">Domů</a></li>
                <li><a href="#" id="But1">Novinky</a></li>
@@ -40,10 +44,12 @@
                <li><a href="#" id="But4">Servery</a></li>
                <li><a href="#" id="But5">Galerie</a></li>
             </ul>
+        </div>
          </div>
          <hr class="lajna">
       </nav>
-      <div class="container-fluid" id="carousel-container">
+      
+      <div class="container-fluid hidden-sm hidden-xs" id="carousel-container">
          <div class="carousel slide" data-ride="carousel" id="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -101,10 +107,11 @@
          </center>
          <hr class="lajna">
          <div class="container-fluid" id="obsah">
+             
          </div>
       </div>
       <!--Parallax-->
-      <div id="clickbejt">
+      <div class="hidden-md hidden-sm hidden-xs" id="clickbejt">
          <div class="container-fluid nadpis">
             <center>
                <h1>Zatim bez Nazvu</h1>
@@ -124,13 +131,13 @@
          <div class="container" id="obsah">
             <div class="row">
                <div class="col-md-4">
-                  <img class="img-circle parallax-circle" src="img/Carousel/novaskin-minecraft-wallpaper.png">
+                  <img class="img-circle parallax-circle hidden-sm hidden-xs" src="img/Carousel/novaskin-minecraft-wallpaper.png">
                   <h3>Cíl skupiny</h3>
                   Rec and Play je projekt pro začínající <br> YouTubery / Streamery s kvalitní tvorbou.
                   <br>Jsme krapet připepřená komunita <br> kde nechybí vtip ani elán.
                </div>
                <div class="col-md-4">
-                  <img class="img-circle parallax-circle" src="img/Carousel/novaskin-minecraft-wallpaper.png">
+                  <img class="img-circle parallax-circle hidden-sm hidden-xs" src="img/Carousel/novaskin-minecraft-wallpaper.png">
                   <h3>Definice</h3>
                   Jsme <strong>Komunita</strong> která hraje především <strong>Minecraft Survival</strong>.
                   Kromě Minecraftu také společně trávíme na <strong>Skypu</strong> čas kde spolu několik hodin denně komunikujeme.
@@ -146,7 +153,7 @@
                   více společných projektů a spolupracovat společne.
                </div>
                <div class="col-md-4">
-                  <img class="img-circle parallax-circle" src="img/Carousel/novaskin-minecraft-wallpaper.png">
+                  <img class="img-circle parallax-circle hidden-sm hidden-xs" src="img/Carousel/novaskin-minecraft-wallpaper.png">
                   <h3>Vznik skupiny</h3>
                   Samotný <strong>nápad</strong> pro komunitu <strong>vymyslel</strong> Luboš M. alias <strong>Lubos__151</strong> když dal
                   Telurovy nápad na komunitu a jako <strong>inspiraci</strong> mu ukázal <strong>Hermitcraft</strong>, v krátkosti
@@ -435,7 +442,7 @@
          </div>
       </div>
       <!-- Galerie-->
-      <div id="galerie">
+      <div class=" hidden-sm hidden-xs" id="galerie">
          <div class="container-fluid nadpis">
             <center>
                <h1>Galerie</h1>
