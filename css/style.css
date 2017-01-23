@@ -115,7 +115,17 @@ body, html {
     #parallax {
         background-attachment: scroll;
     }
+    @-moz-document url-prefix() {
+        #smlogo {
+            width: 35%;
+            height: 35%;
+            padding-bottom: 20px;
+        }
         
+        #novinky {
+            margin-top: 100px;
+        }
+    }    
     #obsah {
         height: 90em;
         padding-bottom: 0;
@@ -126,15 +136,15 @@ body, html {
         overflow: hidden;
     }
     
-    #novinky {
-        margin-top: 100px;
+    #smlogo {
+        overflow: hidden;
     }
     
-    #smlogo {
-        width: 35%;
-        height: 35%;
-        padding-bottom: 20px;
+    #novinky {
+        margin-top: 90px;
     }
+    
+
     #seznam {
         text-align: center;
     }
