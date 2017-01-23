@@ -7,6 +7,7 @@ body, html {
 .navbar-nav {
     padding-top: 20px;
     padding-bottom: 10px;
+    padding-right: 50px;    
     font-size: 25px;  
 }
             
