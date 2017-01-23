@@ -96,6 +96,7 @@ body, html {
                      
 #clenove {
     height: 63em;
+    overflow: hidden;
 }
 
 #seznam {
@@ -122,6 +123,19 @@ body, html {
         margin-bottom: 0;
         margin-top: 0;
         background-color: white;
+        overflow: hidden;
     }
     
+    #novinky {
+        margin-top: 100px;
+    }
+    
+    #smlogo {
+        width: 65%;
+        height: 65%;
+        padding-bottom: 20px;
+    }
+    #seznam {
+        text-align: center;
+    }
 }
