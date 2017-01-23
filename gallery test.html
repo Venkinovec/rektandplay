@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+        <link rel="stylesheet" href="gallery.css">
+        <title>Yolo</title>
+     <style>
+        .galleria{ width: 700px; height: 400px; background: #000 }
+     </style>
+        
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria-1.5.1.min.js"></script>
+	</head>
+    <body>
+      <div id="Container">
+        <div class="galleria">
+            <img src="/img/Carousel/novaskin-minecraft-wallpaper.png">
+            <img src="/img/Carousel/novaskin-minecraft-wallpaper2.png">
+            <img src="/img/Carousel/novaskin-minecraft-wallpaper3.png">
+            <img src="/img/Carousel/novaskin-minecraft-wallpaper4.png">
+        </div>
+        </div>
+        <script>
+	(function() { 
+            Galleria.loadTheme('themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+        </script> 
+	</body>
+</html>
