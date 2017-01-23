@@ -1,0 +1,130 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;  
+}
+            
+#logo {
+    height:80px;
+}
+.lajna {
+    border:0;
+    height: 3px;
+    background: #333;
+    background-image: repeating-linear-gradient(to right, #ccc, #333, #ccc);
+    padding: 0;
+    margin: 0;
+}
+        
+.navbar {
+    background-color: white;
+}    
+
+.navbar a{
+    color:black;
+}
+
+#menu-background {
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+    padding-top:2px;
+}
+
+#wrapper {
+    height: 100px; 
+    width: 100%;
+    margin: 0;
+    padding-top: 0px;
+}
+
+#carousel-container {
+    padding: 0;
+    margin: 0;
+}
+
+#novinky {
+    margin-bottom: 0;
+    padding-top: 4px;
+    background-color: #ff3334;
+}
+
+.nadpis {
+    background-color: #ff3334;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+#obsah {
+    height: 60em;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: white;
+}
+
+#parallax {
+    /* The image used */
+    background-image: url("../img/Carousel/novaskin-minecraft-wallpaper.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    overflow: hidden;
+}
+
+.parallax-circle {
+    padding-top: 15px;
+    height: 30%;
+    width: 75%;
+}
+                     
+#clenove {
+    height: 63em;
+}
+
+#seznam {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.aktivni {
+    background-image: url(../img/Red.jpeg);
+    background-size: 60px;
+    padding-bottom: 35px;
+    
+}
+
+.galerie {
+    padding-top:10px;    
+    width: 250;
+    height: 135px;
+}
+
+.galerie-click {
+    border-style: solid;
+    border-width: 3px;
+    border-color: 4px;
+}
+
+ /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    #parallax {
+        background-attachment: scroll;
+    }
+}
