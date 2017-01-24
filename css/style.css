@@ -116,6 +116,13 @@ body, html {
     overflow: hidden;
 }
 
+#form-login {
+    width: 300px;
+    margin-left: 15%;
+    margin-top: 260px;
+    color:white;
+}
+
 #steve {
     margin-left:50%;
     margin-top: 380px;
