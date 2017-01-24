@@ -58,6 +58,14 @@ body, html {
     background-color: #ff3334;
 }
 
+#novinka {
+    margin-top: 10px;
+}
+
+#novinka-text {
+    margin-top: 5px;
+}
+
 .nadpis {
     background-color: #ff3334;
     padding-bottom: 10px;
