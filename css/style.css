@@ -60,10 +60,17 @@ body, html {
 
 #novinka {
     margin-top: 10px;
+    font-size: 17px;
 }
 
-#novinka-text {
+#novinka-text 
+{
     margin-top: 5px;
+}
+
+#novinka-podtext
+{
+    font-size: 19px;
 }
 
 .nadpis {
