@@ -99,6 +99,12 @@ body, html {
     overflow: hidden;
 }
 
+#steve {
+    margin-left:50%;
+    margin-top: 380px;
+    overflow: hidden;
+}
+
 .parallax-circle {
     padding-top: 15px;
     height: 30%;
