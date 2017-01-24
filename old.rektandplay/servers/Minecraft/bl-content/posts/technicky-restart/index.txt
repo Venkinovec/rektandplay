@@ -1,0 +1,5 @@
+Title: Technicky restart
+Content: Dnes o 22. hodině proběhne update serveru, proto o stejné hodině nebude server dostupný.
+> Server bude dostupný až další den v 10:00.
+
+Proběhne lehká optimalizace s aktualizováním zásuvných modulů a jádra serveru.

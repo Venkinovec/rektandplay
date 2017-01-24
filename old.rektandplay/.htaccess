@@ -1,0 +1,72 @@
+# k896n8*x89U;1 P
+
+# Jakub /// 
+Redirect /iGniSsak https://www.youtube.com/channel/UC8-PDi4o1Ix-GNEPIQikAzQ
+Redirect /iGniSs https://www.youtube.com/channel/UC8-PDi4o1Ix-GNEPIQikAzQ
+# Andrea ///
+Redirect /MrsTečka https://www.youtube.com/user/ohniveprdele
+Redirect /Tečka https://www.youtube.com/user/ohniveprdele
+Redirect /MrsTecka https://www.youtube.com/user/ohniveprdele
+Redirect /Tecka https://www.youtube.com/user/ohniveprdele
+# Daniel /// 
+Redirect /DanekCZ https://www.youtube.com/channel/UClfRlV0IA5DqYkSRXHrqd6w
+# Martin /// 
+Redirect /LovecDuchuGameCZ https://www.youtube.com/channel/UCckgC6AYQFeVAKPYBdVyCAQ
+# Emma /// 
+Redirect /VampírkaLPV https://www.youtube.com/channel/UC78Xm4dcHahx9rwIjhjTyVQ
+# Daniel /// 
+Redirect /Ruby_CZ https://www.youtube.com/channel/UChc-TeC9c8zHJQrnP_Kbcuw
+# Dominika, Hana /// 
+Redirect /Domiri https://www.youtube.com/channel/UC5tQEWeEIw4vpggIYL58XFw
+# Michal /// 
+Redirect /Wolftix https://www.youtube.com/channel/UC9W4I0TlMGmXUwyYWe-jTqQ
+# Štěpán /// 
+Redirect /TheCentrik https://www.youtube.com/channel/UCBUSPdOqE8DVM9M5Mcl37UQ
+Redirect /Centřík https://www.youtube.com/channel/UCBUSPdOqE8DVM9M5Mcl37UQ
+Redirect /Centrik https://www.youtube.com/channel/UCBUSPdOqE8DVM9M5Mcl37UQ
+# Luboš /// 
+Redirect /Lubos__151 https://www.youtube.com/user/Lubos151
+# Robin /// 
+Redirect /TeluroCZ https://www.youtube.com/user/TeluroReborn
+Redirect /Teluro https://www.youtube.com/user/TeluroReborn
+Redirect /TeluroReborn https://www.youtube.com/user/TeluroReborn
+# Kristián /// 
+Redirect /MoonkeyCZ https://www.youtube.com/channel/UC2k4OqqnKdSkQxHdoxfNk-Q
+# /// Onebear157
+Redirect /Onebear157 https://www.youtube.com/channel/UCprDw2Hw81SNxXO_szbohtw
+Redirect /OnebearCZ https://www.youtube.com/channel/UCprDw2Hw81SNxXO_szbohtw
+
+# htaccess pravidla pro subdomeny a samostatne weby aliasu
+# pro vytvoreni subdomeny vytvorte adresar www/subdom/(nazev subdomeny)
+# pro vytvoreni webu pro alias vytvorte adresar www/domains/(cely domenovy nazev)
+# dalsi info a priklady: http://kb.wedos.com/r/32/webhosting-htaccess.html
+
+RewriteEngine On
+
+# cele domeny (aliasy)
+RewriteCond %{REQUEST_URI} !^domains/
+RewriteCond %{REQUEST_URI} !^/domains/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
+RewriteCond %{DOCUMENT_ROOT}/domains/%2 -d
+RewriteRule (.*) domains/%2/$1 [DPI]
+
+# subdomeny (s nebo bez www na zacatku)
+RewriteCond %{REQUEST_URI} !^subdom/
+RewriteCond %{REQUEST_URI} !^/subdom/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)\.([^\.]*)\.([^\.]*)$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%2 -d
+RewriteRule (.*) subdom/%2/$1 [DPI]
+
+# aliasy - spravne presmerovani pri chybejicim /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^domains/[^/]+/(.+[^/])$ /$1/ [R]
+
+# subdomeny - spravne presmerovani pri chybejicim /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^subdom/[^/]+/(.+[^/])$ /$1/ [R]
+
+# chybové stránky
+ErrorDocument 500 /error/500.php
+ErrorDocument 404 /error/404.php
+ErrorDocument 403 /error/403.php
+ErrorDocument 401 /error/401.php

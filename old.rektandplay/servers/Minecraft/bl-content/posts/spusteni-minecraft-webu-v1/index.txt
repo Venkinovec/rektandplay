@@ -1,0 +1,2 @@
+Title: Spusteni Minecraft webu _v1
+Content: Tento web běží pod redakčním CMS systém BLUDIT a spadá pod R&P. Při dotazech použíte dotazník na hlavní stránce > http://recandplay.cz/contact-us.php
