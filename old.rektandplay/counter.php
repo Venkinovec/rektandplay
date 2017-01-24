@@ -1,0 +1,1 @@
+<img src="http://pocitadlo.abz.cz/aip.php?tp=bb"/>

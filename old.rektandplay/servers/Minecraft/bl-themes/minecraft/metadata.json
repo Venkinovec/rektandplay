@@ -1,0 +1,10 @@
+{
+	"author": "Josef Debnár (DontKill_CZ)",
+	"email": "",
+	"website": "",
+	"version": "2.58",
+	"releaseDate": "11.07.2016",
+	"license": "MIT",
+	"compatible": "1.4",
+	"notes": "Compability on previus version not tested. I recomented use latest version of Bludit."
+}
