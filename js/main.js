@@ -68,3 +68,11 @@ $(function() {
     Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
     Galleria.run('.galleria');
 }());
+
+$(document).ready(function (){
+    $(".show-hide").click(function(){
+        $("#gallerystyle").toggle();
+        //$("#div2").fadeToggle("slow");
+        //$("#div3").fadeToggle(3000);
+    });
+});
