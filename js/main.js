@@ -71,7 +71,7 @@ $(function() {
 
 $(document).ready(function (){
     $(".show-hide").click(function(){
-        $("#gallerystyle").toggle();
+        $("#gallerystyle").fadeToggle();
         //$("#div2").fadeToggle("slow");
         //$("#div3").fadeToggle(3000);
     });
