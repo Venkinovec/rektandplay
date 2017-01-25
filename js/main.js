@@ -71,7 +71,15 @@ $(function() {
 
 $(document).ready(function (){
     $(".show-hide").click(function(){
-        $("#gallerystyle").fadeToggle();
+        $(".album").fadeToggle();
+        //$("#div2").fadeToggle("slow");
+        //$("#div3").fadeToggle(3000);
+    });
+});
+
+$(document).ready(function (){
+    $(".show-hide1").click(function(){
+        $(".album1").fadeToggle();
         //$("#div2").fadeToggle("slow");
         //$("#div3").fadeToggle(3000);
     });
