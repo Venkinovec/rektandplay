@@ -120,7 +120,7 @@ body, html {
 #form-login {
     width: 300px;
     margin-left: 15%;
-    margin-top: 260px;
+    margin-top: 200px;
     color:white;
 }
 
@@ -128,6 +128,10 @@ body, html {
     margin-left:50%;
     margin-top: 380px;
     overflow: hidden;
+}
+
+#msg {
+    height: 300px;
 }
 
 .parallax-circle {
