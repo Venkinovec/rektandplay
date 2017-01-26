@@ -168,6 +168,10 @@ body, html {
     
 }
 
+.serv-text {
+    margin-left: 100px;
+}
+
 .galleria
 {   width: 1100px; 
     height: 655px; 
@@ -179,7 +183,7 @@ body, html {
 }
 
 #album {
-    min-height: 10em;
+    min-height: 60em;
     margin-top: 20px;
     margin-bottom: 20px;
 }
