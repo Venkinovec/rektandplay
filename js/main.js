@@ -16,16 +16,27 @@
      });
  });
 
- $(document).ready(function (){
+$(document).ready(function (){
     $("#But2").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#parallax").offset().top-80
+        }, 1000);
+        return false;
+     });
+ });
+
+ $(document).ready(function (){
+    $("#But3").click(function (){
         $('html, body').animate({
              scrollTop: $("#onas").offset().top-80
          }, 1000);
          return false;
      });
  });
+
+
  $(document).ready(function (){
-     $("#But3").click(function (){
+     $("#But4").click(function (){
          $('html, body').animate({
              scrollTop: $("#clenove").offset().top-80
          }, 1000);
@@ -34,7 +45,7 @@
  });
 
  $(document).ready(function (){
-    $("#But4").click(function (){
+    $("#But5").click(function (){
         $('html, body').animate({
             scrollTop: $("#servery").offset().top-80
         }, 1000);
@@ -43,7 +54,7 @@
  });
 
 $(document).ready(function (){
-    $("#But5").click(function (){
+    $("#But6").click(function (){
         $('html, body').animate({
             scrollTop: $("#galerie").offset().top-80
         }, 1000);
@@ -72,8 +83,6 @@ $(function() {
 $(document).ready(function (){
     $(".show-hide").click(function(){
         $(".album").fadeToggle();
-        //$("#div2").fadeToggle("slow");
-        //$("#div3").fadeToggle(3000);
     });
 });
 
