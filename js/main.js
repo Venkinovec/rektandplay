@@ -89,13 +89,10 @@ $(document).ready(function (){
 function hidegall(){
     $(".album").hide();
     $(".album1").hide();
-    //alert("hidden");
 }
 $(document).ready(function (){
     $(".show-hide1").click(function(){
         $(".album1").fadeToggle();
-        //$("#div2").fadeToggle("slow");
-        //$("#div3").fadeToggle(3000);
     });
 });
 
