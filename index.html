@@ -464,7 +464,22 @@
                         <img class="img-square parallax-circle hidden-sm hidden-xs" src="img/MinecraftIcon2.png">
                         <div class="serv-text">
                            <h3>Mc Server</h3>
-                            Status:  <font color="green">Dostupný</font>
+                            <script src="https://mcapi.us/scripts/minecraft.js"></script>
+                            <div class="server-status">
+                              Status up <font color="green"><span class="server-online"></span>!</font>
+                            </div>
+                            <script>
+                              MinecraftAPI.getServerStatus('54.225.76.144', {
+                                port: 25565 // optional, only if you need a custom port
+                              }, function (err, status) {
+                                if (err) {
+                                  return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                                }
+
+                                // you can change these to your own message!
+                                document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
+                              });
+                            </script>
                         </div>
                     </div>
                     <div class="col-md-4">
