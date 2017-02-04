@@ -15,6 +15,7 @@ body, html {
     height:80px;
     margin-right: 10px;
 }
+
 .lajna {
     border:0;
     height: 3px;
@@ -61,7 +62,7 @@ body, html {
 
 #novinka {
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 #novinka-text 
@@ -71,7 +72,7 @@ body, html {
 
 #novinka-podtext
 {
-    font-size: 19px;
+    font-size: 15px;
 }
 
 .nadpis {
@@ -186,6 +187,12 @@ body, html {
     min-height: 60em;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.podminka
+{
+    font-size: 20px;
+    text-decoration-color: blue;
 }
 
 @media screen and (max-width: 768px) {
